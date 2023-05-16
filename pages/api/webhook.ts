@@ -4,9 +4,9 @@ const stripe = require('stripe')('process.env.STRIPE_SECRET_KEY')
 import { buffer } from 'micro'
 import { Order } from '@/models/Order'
 
-const stripe_sk:any = process.env.STRIPE_SECRET_KEY
+const stripe_sk:any = process.env.STRIPE_CALETA_CLE
 // This is your Stripe CLI webhook secret for testing your endpoint locally.
-const endpointSecret = "whsec_ff0b31efefc4e7cec20f502f18c6d88871002014bb9b47a5b59573aaade1ac63";
+const endpointSecret = process.env.STRIPE_END_POINT_CALETA
 
 export default async function handler(
 	req: NextApiRequest,

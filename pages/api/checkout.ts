@@ -5,7 +5,7 @@ import Stripe from 'stripe';
 import { Order } from '@/models/Order'
 import { Product } from '@/models/Product'
 
-const stripe_sk:any = process.env.STRIPE_SECRET_KEY
+const stripe_sk:any = process.env.STRIPE_CALETA_CLE
 const success_url:any = process.env.URL_CALLBACK
 
 export default async function handler(
