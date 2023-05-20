@@ -73,7 +73,6 @@ export default async function handler(
 			line_items,
 			mode: 'payment',
 			customer_email: email,
-			// success_url: success_url + '/cart_page?success=1',
 			success_url: success_url + '/payment_resp?success=1',
 			cancel_url: success_url + '/payment_resp?canceled=1',
 			metadata: {orderId: orderDoc._id.toString(), test: 'ok'}
